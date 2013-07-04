@@ -10,7 +10,9 @@ $ sudo apt-get install flashplugin-nonfree
 http://rmingwang.com/ubuntu-config-virtualhost-configured-virtual-host.html
 
 3. Ubuntu install nodejs && npm
+
 http://dev-tricks.com/tutorialhow-to-install-nodejs-on-centos-6-3/
+
 Method 1:
 <pre>
 apt-get install python g++ make
