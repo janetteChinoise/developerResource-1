@@ -11,9 +11,9 @@ Uage:
 	&lt;/script&gt;
 &lt;![endif]--&gt;
 </pre>
-2、UTF-8字符串截取函数（function.msubstr.php）
+2、UTF-8字符串截取函数（PHP_FUNCTION/function.msubstr.php）
 
-3、服务器端判断是否手机浏览器（function.is_mobile.php）
+3、服务器端判断是否手机浏览器（PHP_FUNCTION/function.is_mobile.php）
 
 4、响应式设计IE Hack（respond.min.js）
 Usage:
@@ -25,3 +25,5 @@ Usage:
 5、jQuery按照序列显示图片（display_image_sequentially）
 
 6、兼容触摸屏幕的图片滚动效果（touchslider）
+
+7、PHP正则匹配中文，包含UTF-8和GB2312（PHP_FUNCTION/function.matchZh.php）
