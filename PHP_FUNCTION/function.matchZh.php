@@ -1,4 +1,18 @@
 <?php
+	/*
+	1. GBK (GB2312/GB18030)
+	/x00-/xff  GBK双字节编码范围
+	/x20-/x7f  ASCII
+	/xa1-/xff  中文
+	/x80-/xff  中文
+	2. UTF-8 (Unicode)
+	/u4e00-/u9fa5 (中文)
+	/x3130-/x318F (韩文
+	/xAC00-/xD7A3 (韩文)
+	/u0800-/u4e00 (日文)
+	ps: 韩文是大于[/u9fa5]的字符
+	*/
+
 	function matchZh($string, $encoding = 'utf-8')
 	{
 	    if (strtolower($encoding) == 'utf-8') {
