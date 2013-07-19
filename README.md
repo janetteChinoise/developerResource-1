@@ -27,3 +27,4 @@ Usage:
 6、兼容触摸屏幕的图片滚动效果（touchslider）
 
 7、PHP正则匹配中文，包含UTF-8和GB2312（PHP_FUNCTION/function.matchZh.php）
+Unicode编码表：http://www.cnblogs.com/tekson/archive/2011/01/11/1933279.html
