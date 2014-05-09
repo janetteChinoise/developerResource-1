@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lazy load Image</title>
+	<style>
+		*{margin:0px;padding:0px;}
+		ul{width: 500px; margin: 0px auto;}
+		ul > li{width: 158px;height: 158px;list-style: none;border: 1px solid #ccc;margin: 3px;float: left;background-color: #dcdcdc;}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><img src="place_holder.gif" class="lazy_load_img" data-src="http://imgstatic.baidu.com/img/image/shouye/yaodi0625.jpg" alt=""></li>
+		<li><img src="place_holder.gif" class="lazy_load_img" data-src="http://amazingpics.net/content/Flowers/flowers%20134.jpg" alt=""></li>
+		<li><img src="place_holder.gif" class="lazy_load_img" data-src="http://t1.gstatic.com/images?q=tbn:ANd9GcQgyJTTj5aekvp5nawu9Bh4-NpkjzYKsas2cuMtcxDJPwmUC0JE" alt=""></li>
+		<li><img src="place_holder.gif" class="lazy_load_img" data-src="http://imgstatic.baidu.com/img/image/shouye/baoxiaosunjian0625.jpg" alt=""></li>
+		<li><img src="place_holder.gif" class="lazy_load_img" data-src="http://imgstatic.baidu.com/img/image/shouye/liushishi0625.jpg" alt=""></li>
+		<li><img src="place_holder.gif" class="lazy_load_img" data-src="http://imgstatic.baidu.com/img/image/shouye/tanyan0625.jpg" alt=""></li>
+		<li><img src="place_holder.gif" class="lazy_load_img" data-src="http://littleguyintheeye.files.wordpress.com/2012/03/flowers.jpg" alt=""></li>
+		<li><img src="place_holder.gif" class="lazy_load_img" data-src="http://imgstatic.baidu.com/img/image/shouye/jijiangbizhi0625.jpg" alt=""></li>
+	</ul>
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script>
+		(function() {  
+		   var lis = $('.lazy_load_img');  
+		   //$('a').click(function() {  
+		      var i = 0;  
+		      (function displayImages() {
+		      	var image = lis.eq(i++);
+		        image.hide().css({'width':'158px','height':'158px'}).attr('src',image.attr('data-src')).fadeIn(200, displayImages);
+		      })();  
+		   //});    
+		})(); 
+	</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+/*去掉浏览器默认格式，开始制作时请更换为reset.css*/
+*{margin:0px;padding:0px;list-style: none;border: 0px;font-size: 12px;}
+a{color: blue;text-decoration: none;}
+/*===========================*/
+
+.simply-scroll-container {position: relative;}
+.simply-scroll-clip {position: relative;overflow: hidden;}
+.simply-scroll-list {overflow: hidden;}
+/*以上样式不用修改直接拷贝*/
+
+/*
+	控制滚动的长度、样式、图片样式设置
+	.scroll_wraper 是滚动所用ul的父级div元素
+	.simply-scroll-list 和 .simply-scroll 为js执行时生成的元素，只管调整相关样式即可。
+*/
+.scroll_wraper{ height:170px; width:938px; overflow:hidden; margin:0px auto; border:3px solid #000; }
+.scroll_wraper ul{ height:168px; overflow:hidden;}
+.simply-scroll-list li{float:left; text-align:center; width:172px; margin:0px 7px; }
+.simply-scroll-list li img {border:1px solid #eeeeee; width:175px; height:143px;}
+.simply-scroll {width: 938px;height: 170px;margin-bottom: 1em;}
